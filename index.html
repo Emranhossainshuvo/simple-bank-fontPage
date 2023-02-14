@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100 ">
+    <header class="text-5xl text-center mt-8">
+        Functional <span class="text-fuchsia-500 font-medium">Baap-er-bank</span>!!!
+    </header>
+    <main>
+        <!-- Balance and tranjection summery -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-pink-300 p-8 rounded-lg">
+                    <h4 class="text-3xl font-medium">
+                        Deposit                   
+                    </h4>
+                    <h2 class="text-5xl">
+                        $<span id="deposit-total">00</span>
+                    </h2>
+                
+
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg">
+                    <h4 class="text-3xl font-medium">
+                        Withdraw                   
+                    </h4>
+                    <h2 class="text-5xl">
+                        $<span id="withdraw-total">00</span>
+                    </h2>
+                
+
+                </div>
+                <div class="bg-amber-500 p-8 rounded-lg">
+                    <h4 class="text-3xl font-medium">
+                        Remaining total                  
+                    </h4>
+                    <h2 class="text-5xl">
+                        $<span id="remaining-total">540</span>
+                    </h2>
+                
+
+                </div>
+                
+            </div>
+        </section>
+        <!-- Deposit and withdraw  -->
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-rose-300 p-8 rounded-lg">
+                    <h2 class="text-4xl mb-4 text-white">
+                        Your deposit
+                    </h2>
+                    <input type="text" id="input-deposit" class="rounded-lg h-10 w-72 px-3 py-3 text-pink-400" placeholder="$ Amount you want to deposit">
+                    <button class="block h-10 w-20 mt-2 text-white font-medium hover:bg-fuchsia-900 rounded-lg bg-fuchsia-800" id="button-deposit">Deposit</button>
+                </div>
+                <div class="bg-fuchsia-400 p-8 rounded-lg">
+                    <h2 class="text-4xl mb-4 text-white">
+                        Your withdraw
+                    </h2>
+                    <input type="text" class="rounded-lg h-10 w-72 px-3 py-3 text-pink-400" placeholder="$ Amount you want to withdraw">
+                    <button class="block h-10 w-20 mt-2 text-white font-medium hover:bg-rose-900 rounded-lg bg-rose-800">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- script starts from here -->
+    <script src="js/bank.js"></script>
+</body>
+</html>
